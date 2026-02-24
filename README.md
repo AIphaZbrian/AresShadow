@@ -20,17 +20,20 @@ Structured workspace for designing, simulating, and deploying "digital employees
 
 ## Quick Start
 
-1. `poetry install` (or your preferred env manager) — tooling definition coming in future commits.  
-2. `make dev` (placeholder) to spin up local services once infra scripts land.  
-3. Read `docs/digital-employee-architecture.md` for the high-level system map.  
-4. Track execution milestones in `agents/ROADMAP.md`.
+1. `scripts/bootstrap_mvp.sh` — spawn a Python venv + install placeholder deps.  
+2. Read `docs/digital-employee-architecture.md` (system map) and `docs/mvp-signal-loop.md` (first closed-loop scenario).  
+3. Review Phase 1 breakdown in `agents/ROADMAP.md`.  
+4. Run `scripts/jobs/fetch_market_stats.py` to fetch Binance 24h stats (prints JSON stub; DB wiring TBD).
 
 ## Status & Next Steps
 
 - [x] Repository skeleton + documentation plan.  
-- [ ] Complete v1 architecture document (in progress).  
-- [ ] Finalize MVP backlog & owner assignments.  
-- [ ] Connect to remote Git hosting (awaiting preferred flow / credentials).
+- [x] Connect to remote Git hosting (deploy key active).  
+- [x] Draft v1 architecture + MVP signal loop.  
+- [x] Add roadmap with Phase 1 task breakdown.  
+- [ ] Implement data pipeline + ops handler code.  
+- [ ] Add Docker Compose + Infra modules.  
+- [ ] Hook up CI/testing workflows.
 
 ---
 
