@@ -1,0 +1,23 @@
+# Python/Node mixed environment defaults
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+.env.*
+.envrc
+node_modules/
+.npm-cache/
+.dist/
+.DS_Store
+.idea/
+.vscode/
+coverage/
+.mypy_cache/
+pytest_cache/
+.parquet.d/
+logs/
+/tmp/
+.swp
+*~
