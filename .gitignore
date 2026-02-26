@@ -19,5 +19,19 @@ pytest_cache/
 .parquet.d/
 logs/
 /tmp/
+tmp/
+
+# OpenClaw runtime/state
+.openclaw/
+
+# Secrets (never commit)
+.ssh/
+
+# Agent memory / runtime artifacts (keep local; can be backed up separately if desired)
+memory/
+
+# Nested template repo (treat as external)
+temp-context-opt/
+
 .swp
 *~

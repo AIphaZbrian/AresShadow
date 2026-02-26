@@ -1,0 +1,48 @@
+app:
+  name: "digital-employee-mvp"
+  timezone: "Asia/Kuala_Lumpur"
+  mode: "dry-run"  # change to production when auto-execution is approved
+
+postgres:
+  dsn_env: "MVP_PG_DSN"  # e.g. postgres://mvp_user:mvp_pass@localhost:5432/mvp_agents
+  snapshot_table: "market_snapshots"
+  signal_table: "intel_signals"
+
+redis:
+  stream_key: "signals.raw"
+  consumer_group: "ops"
+
+symbols:
+  primary: ["BTCUSDT", "ETHUSDT", "SOLUSDT"]
+  reserve: ["BNBUSDT", "XRPUSDT"]
+
+thresholds:
+  realized_vol_1h: 0.02  # lowered for MVP dry-run trigger
+  volume_rank_max: 20
+  min_confidence: 0.65
+
+subscribers:
+  - name: "AiphaZ"
+    channel: "telegram"
+    handle: "@aiphaz"
+    language: "zh"
+    auto_execute: false
+  - name: "Ops-Pager"
+    channel: "slack"
+    handle: "#ops-alerts"
+    language: "en"
+    auto_execute: true
+
+ops_playbook:
+  checklist:
+    - "Verify signal metadata (symbol, timestamp, confidence)."
+    - "Check hedging inventory and exposure."
+    - "Decide execute / escalate within 10 minutes."
+  escalation:
+    default: "ops@aiphabrain.lab"
+    paging_window_minutes: 15
+
+llm:
+  provider: "openai"
+  model: "gpt-4.1"
+  temperature: 0.1

@@ -1,0 +1,50 @@
+# QMD v1 (Query Memory Distillation) - Hybrid Context + Retrieval Cache
+# Goal: lowest token cost + highest continuity + minimal memory pollution
+# Owner: Aipha Brain Lab (ARES)
+# Date: 2026-02-26
+
+mode: qmd-hybrid
+
+# Time-based caches (separated by data type)
+ttl:
+  convoCache: 45m          # thread/conversation state cache
+  retrievalCache: 10m      # cache for identical/similar retrieval queries within a task
+  externalDataCache: 1m    # external feeds/market snapshots (high volatility)
+
+# Token budget thresholds (avoid trim thrashing by keeping buffers)
+tokenBudget:
+  reserveTokensFloor: 4200     # always keep: State + Constraints + Top memories + last turns
+  softThresholdTokens: 7500    # begin soft distill/checkpoint
+  hardThresholdTokens: 10500   # force hard distill (state-only + pointers)
+
+trimPolicy:
+  softDistill:
+    keepLastTurns: 8
+    checkpointMaxLines: 18
+    writeLongTermIf:
+      - approved
+      - reused>=2
+      - explicit_user_request
+  hardDistill:
+    keepLastTurns: 3
+    checkpointMaxLines: 12
+    forceStateOnly: true
+
+retrieval:
+  topK: 5
+  includeOnly:
+    - preferences
+    - decisions
+    - sop
+    - safety_constraints
+  ban:
+    - raw_chat_logs
+
+# Canonical checkpoint output schema (low-token, high-signal)
+checkpointSchema:
+  - Goal
+  - Constraints
+  - State
+  - Decisions
+  - OpenLoops
+  - Pointers
