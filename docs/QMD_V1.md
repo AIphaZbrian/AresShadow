@@ -65,6 +65,12 @@ Always output checkpoints in this fixed schema:
 5. **Open Loops** (next actions)
 6. **Pointers** (paths/urls/commits/message ids)
 
+### Optional: Mindmap view (ultra-low token context)
+Maintain a separate `memory/context_mindmap.md` using Mermaid `mindmap`.
+- Store only stable nodes (facts/decisions/SOP pointers)
+- Avoid raw chat logs
+- Link to files instead of copying text
+
 ## Operational note
 - External data cache (e.g., market stats) can remain at ~1m TTL.
 - Conversation state cache should be much longer (45m+) to avoid unnecessary rebuild.
