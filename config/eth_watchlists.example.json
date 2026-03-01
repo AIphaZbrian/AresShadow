@@ -1,0 +1,16 @@
+{
+  "exchanges": {
+    "binance": [],
+    "coinbase": [],
+    "okx": [],
+    "bybit": [],
+    "kraken": []
+  },
+  "whales_top20": [],
+  "blacklist": [],
+  "notes": {
+    "exchanges": "填入交易所热/冷钱包地址（主网 EOA 或合约地址均可）。用于计算 1h 净流入与‘是否进入交易所’判断。",
+    "whales_top20": "Top20 已知大户地址列表，用于 Whale Watch。",
+    "blacklist": "需要重点监控/风险标记的地址（例如黑名单、被盗地址、受制裁地址等）。"
+  }
+}

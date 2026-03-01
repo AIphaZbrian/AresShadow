@@ -30,6 +30,12 @@ tmp/
 # Agent memory / runtime artifacts (keep local; can be backed up separately if desired)
 memory/
 
+# ARES generated artifacts (do not commit)
+ares_structure_engine/outputs/
+
+# Local watchlists (commit the *.example.json instead)
+config/eth_watchlists.json
+
 # Nested template repo (treat as external)
 temp-context-opt/
 

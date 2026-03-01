@@ -1,0 +1,330 @@
+
+╔══════════════════════════════════════════════════╗
+║          ARES STRUCTURE ENGINE v1.0          ║
+║                                                  ║
+║   Automated Bilingual Market Structure Engine    ║
+║   We read structure, not candles.                ║
+║   我们读结构，不读K线。                            ║
+╚══════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════╗
+║          ARES STRUCTURE ENGINE v1.0          ║
+║                                                  ║
+║   Automated Bilingual Market Structure Engine    ║
+║   We read structure, not candles.                ║
+║   我们读结构，不读K线。                            ║
+╚══════════════════════════════════════════════════╝
+
+
+──────────────────────────────────────────────────
+  7-Day Content Rotation Schedule
+──────────────────────────────────────────────────
+  Day 1 (   Monday): Open Interest + Funding
+  Day 2 (  Tuesday): ETF Flow
+  Day 3 (Wednesday): Liquidation Map
+  Day 4 ( Thursday): Whale Movement
+  Day 5 (   Friday): Stablecoin Supply
+  Day 6 ( Saturday): Orderbook Void
+  Day 7 (   Sunday): Weekly Summary
+──────────────────────────────────────────────────
+
+
+════════════════════════════════════════════════════════════
+  GENERATING ALL 7 DAYS — DEMO MODE
+════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Day 1: Open Interest + Funding
+  Signal: leverage_buildup
+  Tokens: 125 | Budget: ✓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── Twitter (169 chars) ──
+📐 OI + Funding Structure | 2026-02-27
+
+Signal: Leverage Buildup
+BTC OI: +9.9% | Funding: 0.0364 (elevated)
+
+We read structure, not candles.
+— Ares Structure Intelligence
+
+── Telegram ──
+━━━━━━━━━━━━━━━━━━━━
+📐 ARES STRUCTURE ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+🔹 OI + Funding Structure | 2026-02-27
+🔹 持仓量 + 资金费率结构 | 2026-02-27
+
+📊 BTC OI: +9.9% | Funding: 0.0364 (elevated)
+📊 BTC持仓量: +9.9% | 资金费率: 0.0364 (elevated)
+
+🔍 Signal: Leverage Buildup
+
+EN: Leverage is building. Rising open interest with elevated funding signals aggressive positioning. Structure is fragile.
+
+CN: 杠杆正在累积。持仓量上升且资金费率偏高，表明仓位激进。结构脆弱。
+
+━━━━━━━━━━━━━━━━━━━━
+📐 We read structure, not candles.
+📐 我们读结构，不读K线。
+━━━━━━━━━━━━━━━━━━━━
+
+  Saved: ares_2026-02-27_open_interest_funding.json
+
+════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Day 2: ETF Flow
+  Signal: distribution
+  Tokens: 113 | Budget: ✓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── Twitter (159 chars) ──
+📐 ETF Flow Structure | 2026-02-27
+
+Signal: Distribution
+BTC ETF Net: $-144M | Streak: 7d outflow
+
+We read structure, not candles.
+— Ares Structure Intelligence
+
+── Telegram ──
+━━━━━━━━━━━━━━━━━━━━
+📐 ARES STRUCTURE ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+🔹 ETF Flow Structure | 2026-02-27
+🔹 ETF 资金流结构 | 2026-02-27
+
+📊 BTC ETF Net: $-144M | Streak: 7d outflow
+📊 BTC ETF净流: $-144M | 连续7日outflow
+
+🔍 Signal: Distribution
+
+EN: Distribution pattern emerging. ETF outflows coincide with price weakness. Institutional exits are visible.
+
+CN: 分配模式显现。ETF流出与价格走弱同步。机构退出信号可见。
+
+━━━━━━━━━━━━━━━━━━━━
+📐 We read structure, not candles.
+📐 我们读结构，不读K线。
+━━━━━━━━━━━━━━━━━━━━
+
+  Saved: ares_2026-02-27_etf_flow.json
+
+════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Day 3: Liquidation Map
+  Signal: long_flush
+  Tokens: 117 | Budget: ✓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── Twitter (166 chars) ──
+📐 Liquidation Structure | 2026-02-27
+
+Signal: Long Flush
+Liquidated: $663M | Long: $367M · Short: $296M
+
+We read structure, not candles.
+— Ares Structure Intelligence
+
+── Telegram ──
+━━━━━━━━━━━━━━━━━━━━
+📐 ARES STRUCTURE ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+🔹 Liquidation Structure | 2026-02-27
+🔹 清算结构 | 2026-02-27
+
+📊 Liquidated: $663M | Long: $367M · Short: $296M
+📊 清算总量: $663M | 多头: $367M · 空头: $296M
+
+🔍 Signal: Long Flush
+
+EN: Long-side flush complete. Significant long liquidations cleared overleveraged positions. Structure is lighter.
+
+CN: 多头冲洗完成。大量多头清算清除了过度杠杆仓位。结构更轻。
+
+━━━━━━━━━━━━━━━━━━━━
+📐 We read structure, not candles.
+📐 我们读结构，不读K线。
+━━━━━━━━━━━━━━━━━━━━
+
+  Saved: ares_2026-02-27_liquidation_map.json
+
+════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Day 4: Whale Movement
+  Signal: dormant_reactivation
+  Tokens: 138 | Budget: ✓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── Twitter (189 chars) ──
+📐 Whale Flow Structure | 2026-02-27
+
+Signal: Dormant Reactivation
+Net flow: -1,002 BTC | Large txns: 25 | Direction: to_wallet
+
+We read structure, not candles.
+— Ares Structure Intelligence
+
+── Telegram ──
+━━━━━━━━━━━━━━━━━━━━
+📐 ARES STRUCTURE ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+🔹 Whale Flow Structure | 2026-02-27
+🔹 巨鲸流动结构 | 2026-02-27
+
+📊 Net flow: -1,002 BTC | Large txns: 25 | Direction: to_wallet
+📊 净流量: -1,002 BTC | 大额交易: 25笔 | 方向: to_wallet
+
+🔍 Signal: Dormant Reactivation
+
+EN: Dormant coins reactivated. Long-held supply is moving for the first time in years. Structural shift in holder behavior.
+
+CN: 沉睡代币被激活。长期持有的供应首次移动。持有者行为发生结构性转变。
+
+━━━━━━━━━━━━━━━━━━━━
+📐 We read structure, not candles.
+📐 我们读结构，不读K线。
+━━━━━━━━━━━━━━━━━━━━
+
+  Saved: ares_2026-02-27_whale_movement.json
+
+════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Day 5: Stablecoin Supply
+  Signal: liquidity_withdrawal
+  Tokens: 125 | Budget: ✓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── Twitter (194 chars) ──
+📐 Stablecoin Supply Structure | 2026-02-27
+
+Signal: Liquidity Withdrawal
+Total: $155.4B | 7d change: -2.40% | Net mint/burn: $+140M
+
+We read structure, not candles.
+— Ares Structure Intelligence
+
+── Telegram ──
+━━━━━━━━━━━━━━━━━━━━
+📐 ARES STRUCTURE ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+🔹 Stablecoin Supply Structure | 2026-02-27
+🔹 稳定币供应结构 | 2026-02-27
+
+📊 Total: $155.4B | 7d change: -2.40% | Net mint/burn: $+140M
+📊 总量: $155.4B | 7日变化: -2.40% | 净铸造/销毁: $+140M
+
+🔍 Signal: Liquidity Withdrawal
+
+EN: Liquidity withdrawal detected. Stablecoin supply contracting. Capital is leaving the ecosystem.
+
+CN: 检测到流动性撤出。稳定币供应收缩。资金正在离开生态系统。
+
+━━━━━━━━━━━━━━━━━━━━
+📐 We read structure, not candles.
+📐 我们读结构，不读K线。
+━━━━━━━━━━━━━━━━━━━━
+
+  Saved: ares_2026-02-27_stablecoin_supply.json
+
+════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Day 6: Orderbook Void
+  Signal: synthetic_depth
+  Tokens: 133 | Budget: ✓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── Twitter (184 chars) ──
+📐 Orderbook Depth Structure | 2026-02-27
+
+Signal: Synthetic Depth
+Bid depth: $119M | Ask depth: $192M | Imbalance: -22.1%
+
+We read structure, not candles.
+— Ares Structure Intelligence
+
+── Telegram ──
+━━━━━━━━━━━━━━━━━━━━
+📐 ARES STRUCTURE ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+🔹 Orderbook Depth Structure | 2026-02-27
+🔹 订单簿深度结构 | 2026-02-27
+
+📊 Bid depth: $119M | Ask depth: $192M | Imbalance: -22.1%
+📊 买盘深度: $119M | 卖盘深度: $192M | 失衡: -22.1%
+
+🔍 Signal: Synthetic Depth
+
+EN: Synthetic depth detected. Spoofing patterns visible in the order book. Displayed liquidity may not be genuine.
+
+CN: 检测到合成深度。订单簿中可见挂单欺诈模式。显示的流动性可能不真实。
+
+━━━━━━━━━━━━━━━━━━━━
+📐 We read structure, not candles.
+📐 我们读结构，不读K线。
+━━━━━━━━━━━━━━━━━━━━
+
+  Saved: ares_2026-02-27_orderbook_void.json
+
+════════════════════════════════════════════════════════════
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Day 7: Weekly Summary
+  Signal: structural_compression
+  Tokens: 119 | Budget: ✓
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── Twitter (172 chars) ──
+📐 Weekly Structure Summary | 2026-02-27
+
+Signal: Structural Compression
+OI: -7.6% | ETF: $-796M | Liq: $1014M
+
+We read structure, not candles.
+— Ares Structure Intelligence
+
+── Telegram ──
+━━━━━━━━━━━━━━━━━━━━
+📐 ARES STRUCTURE ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+🔹 Weekly Structure Summary | 2026-02-27
+🔹 周度结构总结 | 2026-02-27
+
+📊 OI: -7.6% | ETF: $-796M | Liq: $1014M
+📊 持仓量: -7.6% | ETF: $-796M | 清算: $1014M
+
+🔍 Signal: Structural Compression
+
+EN: Structural compression this week. Multiple metrics converging toward neutral. A regime change may follow.
+
+CN: 本周结构压缩。多项指标趋向中性。可能随后发生制度转换。
+
+━━━━━━━━━━━━━━━━━━━━
+📐 We read structure, not candles.
+📐 我们读结构，不读K线。
+━━━━━━━━━━━━━━━━━━━━
+
+  Saved: ares_2026-02-27_weekly_summary.json
+
+════════════════════════════════════════════════════════════
+

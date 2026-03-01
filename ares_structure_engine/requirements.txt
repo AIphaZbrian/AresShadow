@@ -1,0 +1,19 @@
+# ARES STRUCTURE ENGINE v1.0 — Dependencies
+#
+# Core engine has ZERO external dependencies (stdlib only).
+# The packages below are optional for enhanced functionality.
+
+# Optional: Load .env files
+python-dotenv>=1.0.0
+
+# Optional: Telegram Bot (alternative to built-in urllib)
+# python-telegram-bot>=20.0
+
+# Optional: Twitter/X posting
+# tweepy>=4.14.0
+
+# Optional: Scheduling (alternative to cron)
+# schedule>=1.2.0
+
+# Optional: Live data APIs
+# requests>=2.31.0

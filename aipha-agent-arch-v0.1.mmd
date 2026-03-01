@@ -1,0 +1,105 @@
+%% Aipha Brain Lab Agent Architecture v0.1 (Poster)
+flowchart TB
+  %% Layers
+  subgraph L1["L1 Channels"]
+    TG[Telegram]
+    WEB[Web UI / WebChat]
+    DISC[Discord]
+    API[HTTP API / CLI]
+  end
+
+  subgraph L2["L2 Gateway + Identity"]
+    NORM["Channel Adapter + Normalization\n(Message Envelope)"]
+    IAM["Identity Mapping + RBAC\n(capability tokens)"]
+    ROUTE["Routing + Session Manager"]
+  end
+
+  subgraph L3["L3 Scheduler + Event Bus"]
+    CRON["Cron Jobs\n(09:00 dailies, Molbook scan)"]
+    BUS["Event Bus / Task Queue\n(retry, dedup, idempotency)"]
+    TRIG["Triggers\n(log error, data stale, risk breach)"]
+  end
+
+  subgraph L4["L4 Supervisor / Orchestrator"]
+    SUP["Supervisor Agent\nPlan → Execute → Verify → Writeback"]
+    POL["Policy Engine\n(guardrails, escalation)"]
+    RISK["Risk Gate (HARD)\nlimits, exposure, approvals"]
+  end
+
+  subgraph L5["L5 Worker Agents (Digital Employees)"]
+    INTEL["aresintel\nmarket + narrative → signals"]
+    OPS["aresops\nhealth + self-heal + alerts"]
+    COMM["arescomm\nMolbook social + briefs"]
+    OB["aresorderbook\nSuper Orderbook core"]
+    RES["aresresearch\ndeep research pipeline"]
+  end
+
+  subgraph L6["L6 Tool Runtime (Sandboxed)"]
+    DATA["Market / Onchain / News APIs"]
+    SYS["System Tools\nGit/FS/Runner/Logs"]
+    MSG["Messaging Tools\nTelegram push"]
+    SIM["Sim Trading / Test Accounts\n(strict isolation)"]
+    LIVE["Live Trading\n(Founder approval required)"]
+  end
+
+  subgraph L7["L7 Memory + Data Plane"]
+    DB["Structured DB\n(snapshots, signals, ops, decisions, trades)"]
+    DOC["Human Memory\nMEMORY.md + daily notes"]
+    AUD["Audit / Replay\nreproduce decision context"]
+  end
+
+  subgraph L8["L8 Observability + Security"]
+    OBS["Observability\nlatency, cost, success, alerts"]
+    SEC["Security\nsecrets, isolation, access control"]
+  end
+
+  %% Main flow
+  TG --> NORM
+  WEB --> NORM
+  DISC --> NORM
+  API --> NORM
+  NORM --> IAM --> ROUTE --> SUP
+
+  CRON --> BUS
+  TRIG --> BUS
+  BUS --> SUP
+
+  %% Orchestration
+  SUP --> INTEL
+  SUP --> OPS
+  SUP --> COMM
+  SUP --> OB
+  SUP --> RES
+
+  %% Tools (through policy/risk gates)
+  SUP --> POL --> RISK
+  RISK --> DATA
+  RISK --> SYS
+  RISK --> MSG
+  RISK --> SIM
+  RISK --> LIVE
+
+  %% Data + memory writeback
+  INTEL --> DB
+  OPS --> DB
+  OB --> DB
+  SUP --> DOC
+  DB --> AUD
+
+  %% Monitoring / protection
+  OBS -. monitors .- SUP
+  OBS -. monitors .- BUS
+  OBS -. monitors .- MSG
+  SEC -. protects .- IAM
+  SEC -. isolates .- SIM
+  SEC -. isolates .- LIVE
+
+  %% Styling
+  classDef gate fill:#1f1f1f,stroke:#ff4d4f,stroke-width:2px,color:#ffffff;
+  class LIVE gate;
+  classDef layer fill:#0b1220,stroke:#334155,color:#e2e8f0;
+  classDef box fill:#0f172a,stroke:#60a5fa,color:#e2e8f0;
+  classDef warn fill:#111827,stroke:#f59e0b,color:#fff;
+  class L1,L2,L3,L4,L5,L6,L7,L8 layer;
+  class TG,WEB,DISC,API,NORM,IAM,ROUTE,CRON,BUS,TRIG,SUP,POL,RISK,INTEL,OPS,COMM,OB,RES,DATA,SYS,MSG,SIM,DB,DOC,AUD,OBS,SEC box;
+  class RISK warn;
