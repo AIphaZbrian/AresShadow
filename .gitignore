@@ -26,6 +26,7 @@ tmp/
 
 # Secrets (never commit)
 .ssh/
+.keys/
 
 # Agent memory / runtime artifacts (keep local; can be backed up separately if desired)
 memory/
@@ -38,6 +39,10 @@ config/eth_watchlists.json
 
 # Nested template repo (treat as external)
 temp-context-opt/
+Ares-OS-test/
 
 .swp
 *~
+
+# Local transient logs
+.tmp_ensure_twin_gateway.log
